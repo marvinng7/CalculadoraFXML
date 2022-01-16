@@ -12,8 +12,8 @@ public class App extends Application {
 	public void start(Stage primaryStage) throws Exception {
 
 		controlador = new Controller();
-		controlador.getView().getStylesheets().add("/css/clasica.css");
-		//controlador.getView().getStylesheets().add("/css/moderna.css");
+		//controlador.getView().getStylesheets().add("/css/clasica.css");
+		controlador.getView().getStylesheets().add("/css/moderna.css");
 		Scene scene = new Scene(controlador.getView());
 		primaryStage.setScene(scene);
 		primaryStage.setTitle("CalculadoraFXML");
