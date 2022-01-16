@@ -1,0 +1,82 @@
+.view {
+	-fx-background-color: #333333;
+	-fx-font-family: monospace;
+	-fx-hgap: 1.0px;
+	-fx-hgap: 1.0px;
+	}
+	
+.viewText{
+	-fx-tet-fill: lightgrey;
+	-fx-text-alignment: right;
+	-fx-font-size: 25.0pt;
+	-fx-font-weight: bold;
+	-fx-padding: 10.0px;
+	-fx-background-color: transparent;
+	-fx-background-insets: 0.0px;
+	-fx-text-fill: white;
+}
+
+.button{
+	-fx-font-size: 16.0pt;
+	-fx-background-radius: 0.0px;
+	-fx-background-insets: 0.0px;
+}
+
+.button:focused{
+	-fx-border-color: white;
+}
+
+.button:armed{
+	-fx-border-color: yellow;
+}
+
+.buttonNumerico{
+	-fx-text-fill: white;
+	-fx-background-color: #828282;
+}
+
+.buttonNumerico:hover {
+	-fx-text-fill: #828282;
+	-fx-background-color: white;
+}
+
+.buttonNumerico:pressed {
+	-fx-text-fill: #9c9c9c;
+	-fx-background-color: black;
+}
+
+.buttonReset {
+	-fx-text-fill: black;
+	-fx-background-color: #9c9c9c;
+}
+
+.buttonReset:hover {
+	-fx-background-color: white;
+}
+
+.buttonReset:pressed {
+	-fx-text-fill: #9c9c9c;
+	-fx-background-color: black;
+}
+
+.buttonOperacion {
+	-fx-text-fill: white;
+	-fx-background-color: orange;
+}
+
+.buttonOperacion:hover {
+	-fx-background-color: #ff8000;
+}
+
+.buttonOperacion:hover:default {
+	-fx-background-color: red;
+}
+
+.buttonOperacion:pressed {
+	-fx-text-fill: orange;
+	-fx-background-color: white;
+}
+
+#botonOperacion {
+	-fx-background-color: #ff8000;
+}
