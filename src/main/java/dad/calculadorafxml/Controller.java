@@ -112,6 +112,23 @@ public class Controller implements Initializable {
 		borrarAll.setOnAction(e -> onOperacionesAction("borrarAll", '0'));
 		buttonBorrar.setOnAction(e -> onOperacionesAction("borrar", '0'));
 
+		
+		MenuItem clasicoItem = new MenuItem("Clásico");
+		clasicoItem.setOnAction(e -> {
+			view.getStylesheets().setAll("/css/clasica.css");
+		});
+		
+		MenuItem modernoItem = new MenuItem("Moderno");
+		modernoItem.setOnAction(e -> {
+			view.getStylesheets().setAll("/css/moderna.css");
+		});
+		
+		ContextMenu menu = new ContextMenu(clasicoItem, modernoItem);
+		
+		view.setOnContextMenuRequested(e -> {
+			menu.show(view, e.getScreenX(), e.getScreenY());
+		});
+		
 	}
 
 	private void onOperacionesAction(String string, char c) {
